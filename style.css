@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+.container {
+    height: 150vh;
+    width: 1239px;
+    background: linear-gradient(22deg, rgb(244, 191, 191), rgb(185, 185, 255), rgb(228, 255, 205));
+    padding: 12px;
+}
+
+.box {
+    border-radius: 14px;
+    padding: 3px;
+    margin: 0px auto;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+ 
+    width: 45%;
+    /* max-width: 540px; */
+}
+
+.head {
+    padding-top: 12px;
+}
+
+.head h2 {
+    font-family: cursive;
+    font-weight: 499;
+    font-size: 32px;
+}
+
+.display h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff007b;
+    margin-top: 40px;
+}
+
+.add {
+
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    height: 31px;
+    width: 402px;
+    margin: 0px auto;
+    border-radius: 27px;
+
+    display: flex;
+    margin-top: 25px;
+    font-size: 11px;
+    font-family: math;
+ 
+}
+
+.add h2 {
+
+    margin-right: 6px;
+}
+
+.add button {
+    height: 26px;
+    border-radius: 18px;
+    border: none;
+    width: 84px;
+    background: #ff5945;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+
+}
+
+#list-container{
+    margin-top: 12px;
+    display: grid;
+    grid:100px / auto auto;
+    color: #1600ff;
+
+}
+
+ul li{
+    border-radius: 6px;
+    list-style-type: none;
+    border:solid 2px black;
+    margin: 3px;
+    padding: 2px;
+
+
+}
+
+ul li input{
+    background: #eae8e8;
+    border: none;
+    border-radius: 13px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.btn button{
+    font-weight: bold;
+    color: white;
+    background: #1600ff;
+    border: none;
+    border-radius: 13px;
+    width: 108px;
+    height: 28px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+@media print{
+    body *{
+       visibility: hidden;
+    }
+
+   .head , .head *{
+        visibility: visible;
+    }
+
+    .head{
+        position: absolute;
+        top: 20%;
+        left: 0%;
+        width: 100%;
+
+        page-break-inside: avoid;
+    }
+   .display , .display *{
+        visibility: visible;
+    }
+
+    .display{
+        position: absolute;
+        top: 80%;
+        left: 24%;
+        width: 50%;
+
+        page-break-inside: avoid;
+    }
+   #list-container, #list-container *{
+        visibility: visible;
+    }
+
+    #list-container{
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        width: 100%;
+
+
+        page-break-inside: avoid;
+    }
+
+    .display h3, .head {
+        color: red;
+        font-size: 45px;
+    }
+
+    #list-container h5{
+        color: inherit;
+    }
+
+
+
+}
