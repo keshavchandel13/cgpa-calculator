@@ -89,8 +89,6 @@ ul li{
     border:solid 2px black;
     margin: 3px;
     padding: 2px;
-
-
 }
 
 ul li input{
@@ -124,7 +122,7 @@ ul li input{
 
     .head{
         position: absolute;
-        top: 20%;
+        top: 10%;
         left: 0%;
         width: 100%;
 
@@ -148,11 +146,10 @@ ul li input{
 
     #list-container{
         position: absolute;
-        top: 30%;
+        top: 15%;
         left: 0%;
         width: 100%;
-
-
+        
         page-break-inside: avoid;
     }
 
